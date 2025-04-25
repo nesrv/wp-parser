@@ -5,6 +5,8 @@
 
 python3 -m venv venv
 
+pip freeze > req.txt
+pip install -r req.txt
 ```
 
 
@@ -17,6 +19,5 @@ python3 -m venv venv
 curl -X 'GET' \
   'https://discounts-prices-api.wildberries.ru/api/v2/list/goods/filter?limit=20&offset=0' \
   -H 'accept: application/json' \
-  -H 'Authorization: '
-
+  -H 'Authorization: eyJhbGci..._ng'
 ```
